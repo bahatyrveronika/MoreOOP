@@ -7,6 +7,15 @@
     <groupId>ua.edu.ucu.apps</groupId>
     <artifactId>MoreOOP</artifactId>
     <version>1.0-SNAPSHOT</version>
+    
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -14,8 +23,14 @@
             <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.34</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
-
+    
     <build>
         <plugins>
             <plugin>
@@ -25,11 +40,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
 </project>
